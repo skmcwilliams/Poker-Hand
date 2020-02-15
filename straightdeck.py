@@ -10,7 +10,7 @@ def straight_hand():
     ranks[-4] = 11
     ranks = [int(i) for i in ranks]
     
-    deck = [(r, s) for s in suits for r in ranks ]
+    deck = [[r,s] for s in suits for r in ranks ]
 
     hand = random.sample(deck, 5)
     print(hand)
