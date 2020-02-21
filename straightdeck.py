@@ -15,7 +15,7 @@ def straight_hand():
     hand = random.sample(deck, 5)
     print(hand)
     cards = [hand[0][0], hand[1][0], hand[2][0], hand[3][0], hand[4][0]]
-    cards = [int(card) for card in cards]
+    cards = list(map(int,cards))
     cards.sort()
     if cards[4] - cards[1] == 1 and cards[3] - cards[2] == 1 and cards [2] - cards[1] == 1 and cards[1] - cards[0] == 1:
         print(True)
