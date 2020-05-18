@@ -1,0 +1,2 @@
+poker_straight() is a simple function that randomizes a deck of cards and determines if the user achieved a straight or not.
+If not, the function runs until a straight is achieved, counting each hand along the way.
