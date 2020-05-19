@@ -32,15 +32,17 @@ def straight_hand():
 
         # check if all differences are equal to 1, if so then this is a straight and the program stops running
         if all(x == 1 for x in diff):
-            straight == True
+            count += 1
             print(cards)
             print('You have a straight after '+ str(count)+ ' hands!!')
+            straight == True
             break
 
         # if all differenes are not equal to 1, then the hand is not a straight and the program continues to run
         else:
-            print('Hand ' + str(count) + ' is not a straight...')
             count += 1
+            print(cards)
+            print('Hand ' + str(count) + ' is not a straight...\n')
             continue
 
 straight_hand()
